@@ -1,0 +1,187 @@
+﻿<!DOCTYPE html>
+<html>
+    <head>
+      <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <link rel="shortcut icon" href="favicon.ico" />
+        
+        <!-- Tell the browser to be responsive to screen width -->
+        <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" >
+        <!-- Optional theme -->
+        <link rel="stylesheet" href="bootstrap/css/bootstrap-theme.min.css" >
+        <link rel="stylesheet" href="css/style.css" >
+        <!-- Latest compiled and minified JavaScript -->
+        <script src="js/jquery-3.1.1.min.js" ></script>
+        <script src="bootstrap/js/bootstrap.min.js" ></script>
+		    ${head}
+        
+		
+
+    </head>
+    <body>
+
+        <header class="container-fluid" id="topo">
+					<nav class="navbar header">
+                      <div class="menu-wrap">
+                        <div class="navbar-header">
+                            <button type="button" id="nav-toggle" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-nav" aria-expanded="false">
+								<span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar top-bar"></span>
+                                <span class="icon-bar middle-bar"></span>
+                                <span class="icon-bar bottom-bar"></span>                     
+                          </button>
+                          <a class="navbar-brand" href="#topo" data-id="topo"><img src="images/Logo_header.png" class="img-responsive" border="0"></a>
+                        </div>
+                        <div>
+                          <div class="collapse navbar-collapse" id="main-nav">
+							<div id="overlay-menu" class=""></div>
+                            <ul class="nav navbar-nav navbar-right">
+                              <li><a href="#" target="_blank" >Quero ser MEI</a></li>
+                              <li><a href="#/" target="_blank" >Já sou MEI</a></li>
+                              <li><a href="#/" target="_blank" >Maquininha</a></li>
+							  <li><a href="#/" target="_blank" >Contador</a></li>
+                              <li><a href="#/" target="_blank" >Dúvidas</a></li>
+							  <li><a href="#/" target="_blank" >Blog</a></li>
+                              <li><a href="#/" target="_blank" >Acesse o aplicativo</a></li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </nav>    
+
+        </header>
+
+		<div class="container-fluid"  id="bloco01">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-3 col-md-5 col-xs-12">
+						  <img src="images/img-home.png" class="img-responsive">
+						</div>
+						<div class="col-lg-6 col-md-7 col-xs-12">
+							<div class="titulo-bloco-1">
+								Bem-vindo ao Portal do Contador MEI
+							</div>
+							<div class="text-bloco-1">
+								A Easymei possui uma parceria exclusiva com a Fenacon, onde foi lançado em conjunto o aplicativo EasyContador, a easymei 
+disponibiliza neste portal um canal onde reunimos todos os 
+contadores do Brasil, onde você poderá encontrar ou consultar um nome, endereço, telefone ou e-mail. Fique à vontade!
+							</div>
+						</div>
+					</div>
+			    </div>
+		</div>
+
+		<div class="container-fluid"  id="bloco02">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-offset-1 col-lg-10 col-md-12 col-xs-12 text-busca">
+						  Selecione abaixo o Estado, Cidade e Bairro que deseja pesquisar.<br>
+                        A Easymei não é responsável por qualquer relação comercial e qualidade na prestação do serviço da empresa contábil.<br>
+                        Nosso objetivo é conectar o MEI a uma empresa contábil, que possa auxiliar, desde a abertura gratuita da sua empresa MEI, 
+                        na gestão do dia a dia e no cumprimento das obrigações junto ao Governo.
+						</div>
+						<div class="col-lg-offset-1 col-lg-10 col-md-12 col-xs-12">
+							<div class="col-lg-3 col-md-3 col-xs-12 text-center">
+								<div class="select-hack">
+                                        <select  class="form-bg-select"  required>
+                                            <option  value="" selected>Selecione o Estado</option>
+                                             <option value="27">AL</option>
+                                             <option value="13">AM</option>
+                                             <option value="16">AP</option>
+                                             <option value="29">BA</option>
+                                             <option value="23">CE</option>
+                                             <option value="53">DF</option>
+                                             <option value="32">ES</option>
+                                             <option value="52">GO</option>
+                                             <option value="21">MA</option>
+                                             <option value="31">MG</option>
+                                             <option value="50">MS</option>
+                                             <option value="51">MT</option>
+                                             <option value="15">PA</option>
+                                             <option value="25">PB</option>
+                                             <option value="26">PE</option>
+                                             <option value="22">PI</option>
+                                             <option value="41">PR</option>
+                                             <option value="33">RJ</option>
+                                             <option value="24">RN</option>
+                                             <option value="11">RO</option>
+                                             <option value="14">RR</option>
+                                             <option value="43">RS</option>
+                                             <option value="42">SC</option>
+                                             <option value="28">SE</option>
+                                             <option value="35">SP</option>
+                                        </select>
+                                 </div>
+							</div>
+							<div class="col-lg-3 col-md-3 col-xs-12 text-center">
+								<div class="select-hack">
+                                        <select disabled  class="form-bg-select"  required>
+                                            <option value="" selected>Selecione a Cidade</option>
+                                             <option value="27">AL</option>
+                                             <option value="13">AM</option>
+                                        </select>
+                                 </div>
+							</div>
+							<div class="col-lg-3 col-md-3 col-xs-12 text-center">
+								<div class="select-hack">
+                                        <select  disabled class="form-bg-select"  required>
+                                            <option value="" selected>Selecione o Bairro</option>
+                                             <option value="27">AL</option>
+                                             <option value="13">AM</option>
+                                        </select>
+                                 </div>
+							</div>
+							<div class="col-lg-3 col-md-3 col-xs-12 text-center">
+								<div class="select-hack">
+                                   <button class="btn-pesquisar"  onclick="window.location.href = 'resultado.html'" >Pesquisar</button>
+                                 </div>
+							</div>
+						</div>
+					</div>
+			    </div>
+		</div>
+		
+		
+		<footer>
+			<div class="row content">
+				<div class="col-md-8 col-xs-12">
+					<div class="row">
+                        <div class="col-lg-4 col-md-5 col-sm-12 footer-title"><img src="images/easymei-footer.png" border="0" class="img-responsive"></div>
+                        <div class="col-lg-6 col-md-6 col-sm-12">
+							<div class="social-footer">
+                                <a href="https://br.linkedin.com/company/easymei" target="_blank"><img src="images/in-icon.png"></a>
+                                <a href="https://www.instagram.com/easymeiapp/" target="_blank"><img src="images/insta.png"></a>
+                                <a href="https://facebook.com/easymei" target="_blank"><img src="images/fb.png"></a>
+                                <a href="javascript:$zopim.livechat.window.show();"><img src="images/chat.png"></a>
+                                <a title="Fale com a nossa assessoria de imprensa." href="mailto:imprensa@easymei.com.br"><img src="images/assessoria-icon.png"></a>
+							</div>
+						</div>
+						<div class="col-md-9 col-sm-12 txt-footer">
+						<p>Os serviços relacionados a formalização do MEI podem ser feitos de forma gratuita e diretamente pelo microempreendedor junto aos Órgãos do Governo. A Easymei é uma empresa privada e oferece auxílio na formalização, de forma orientativa e gratuita. Não faz parte do Governo. A contratação do sistema Easymei é optativo.</p>
+
+                        <p>© 2020 AppGroup Tecnologia em Softwares e Gestão Ltda. Todos os direitos reservados. Easymei é uma marca registrada da AppGroup Solutions. Termos e condições, recursos, suporte, preços e opções estão sujeitos a mudanças sem prévio aviso.</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4 col-xs-12 pull-right">
+					<div class="footer-menu">
+                        <ul>
+                            <li class="menu-item"><a href="https://easymei.com.br/quero-ser-mei/">Quero ser MEI</a></li>
+                            <li class="menu-item"><a href="https://easymei.com.br/ja-sou-mei/">Já sou MEI</a></li>
+							<li class="menu-item"><a href="https://easymei.com.br/maquininha/">Maquininha</a></li>
+							<li class="menu-item"><a href=" ">Contador</a></li>
+                            <li class="menu-item"><a target="_blank" rel="noopener noreferrer" href="https://appgroupbrasil.zendesk.com/hc/pt-br">Dúvidas</a></li>
+                            <li class="menu-item"><a href="https://easymei.com.br/blog/">Blog</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</footer>
+		
+<script type="text/javascript" src="js/acdw.js" ></script>
+<!--Script rolagem -->
+
+    </body>
+</html>

@@ -1,0 +1,32 @@
+<template>
+  <Layout>
+   <bloco01 :config="bloco01"></bloco01>
+  </Layout>
+</template>
+
+<script>
+import bloco01 from '~/components/bloco01.vue'
+export default {
+  metaInfo: {
+    title: 'Contadores'
+  },
+  components: {
+    bloco01
+  },
+  data() {
+    return {
+      bloco01: {
+        image: '/assets/images/img-home.png',
+        title: 'Bem-vindo ao Portal do Contador MEI',
+        text: `A Easymei possui uma parceria exclusiva com a Fenacon, onde foi lançado em conjunto o aplicativo EasyContador, a easymei disponibiliza neste portal um canal onde reunimos todos os contadores do Brasil, onde você poderá encontrar ou consultar um nome, endereço, telefone ou e-mail. Fique à vontade!`,
+      }
+    }
+  },
+}
+</script>
+
+<style>
+.home-links a {
+  margin-right: 1rem;
+}
+</style>
