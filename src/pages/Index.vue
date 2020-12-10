@@ -1,17 +1,20 @@
 <template>
   <Layout>
    <bloco01 :config="bloco01"></bloco01>
+   <bloco02 :config="bloco01"></bloco02>
   </Layout>
 </template>
 
 <script>
 import bloco01 from '~/components/bloco01.vue'
+import bloco02 from '~/components/bloco02.vue'
 export default {
   metaInfo: {
     title: 'Contadores'
   },
   components: {
-    bloco01
+    bloco01,
+    bloco02
   },
   data() {
     return {
