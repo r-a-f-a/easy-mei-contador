@@ -80,6 +80,15 @@ export default {
   },
   created(){
   },
+   watch: {
+    "filter.estado" : function (val) {
+      this.filter.cidade = ''
+      this.filter.bairro = ''
+    },
+    "filter.cidade" : function (val) {
+      this.filter.bairro = ''
+    }
+  },
   methods: {
     getRandom(arr, n) {
       var result = new Array(n),
@@ -144,8 +153,7 @@ export default {
             return contador.bairro
         }
       }).filter(notUndefined => notUndefined !== undefined))
-    },
-    
+    }, 
     filtered () {
       const self = this;
       if (!this.haveFilter) {
