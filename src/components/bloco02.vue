@@ -34,8 +34,8 @@
 							<div class="col-lg-3 col-md-3 col-xs-12 text-center">
 								<div class="select-hack">
 
-                  <select  class="form-bg-select"  required>
-                                            <option value="" selected>Selecione a Bairro</option>
+                  <select v-model="filter.bairro" class="form-bg-select"  required>
+                                            <option selected>Selecione a Bairro</option>
                                             <!-- <template v-for="(contador,index) in contadores">
                                               
                                               <option :value="contador.cidade"  :key="`cidade-${index}`" v-if="filter.cidade !== '' && contador.estado === filter.estado && contador.cidade === filter.cidade">{{contador.bairro}}</option>
@@ -49,7 +49,7 @@
 							</div>
 							<div class="col-lg-3 col-md-3 col-xs-12 text-center">
 								<div class="select-hack">
-                                   <button class="btn-pesquisar"  onclick="window.location.href = 'resultado.html'" >Pesquisar</button>
+                                   <button class="btn-pesquisar" >Pesquisar</button>
                                  </div>
 							</div>
 						</div>

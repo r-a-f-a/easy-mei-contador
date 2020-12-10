@@ -8,7 +8,7 @@
       </div>
       <div class="col-lg-3 col-md-3 col-xs-12 pad-box-mob">
          <div class="title">Endereço:</div>
-         <div class="text">{{item.endereco}}</div>
+         <div class="text">{{item.endereco}} - {{item.bairro}}</div>
       </div>
       <div class="col-lg-3 col-md-3 col-xs-12 pad-box-mob">
          <div class="title">Contato:</div>
