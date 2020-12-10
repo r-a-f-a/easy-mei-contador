@@ -16,6 +16,14 @@ export default {
     bloco01,
     bloco02
   },
+  created() {
+    console.log('created')
+    if(process.isClient){
+      const firebase = require('../firebase')
+      console.log('RUN FIREBASE', firebase.default)
+      firebase.default.getAllContadores()
+    }
+  },
   data() {
     return {
       bloco01: {

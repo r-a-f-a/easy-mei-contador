@@ -157,7 +157,10 @@ export default {
     filtered () {
       const self = this;
       if (!this.haveFilter) {
-        return this.getRandom(store.state.contadores,10)
+        if(store.state.contadores.length > 0){
+          return this.getRandom(store.state.contadores,10)
+        }
+        return []
       } else {
         return this.filterArray(store.state.contadores,this.filters)
       }

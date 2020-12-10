@@ -10,6 +10,11 @@ const firebaseConfig = {
     appId: "1:579663411746:web:7411635cd884984cd6287b",
     measurementId: "G-84F8FG2PPY"
 };
+// var firebase = require("firebase/app");
+
+// // Add the Firebase products that you want to use
+// require("firebase/analytics");
+// require("firebase/firestore");
 // Initialize Firebase
 firebase.initializeApp(firebaseConfig);
 firebase.analytics();
