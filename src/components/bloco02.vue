@@ -49,7 +49,7 @@
 							</div>
 							<div class="col-lg-3 col-md-3 col-xs-12 text-center">
 								<div class="select-hack">
-                                   <button class="btn-pesquisar" >Pesquisar</button>
+                                   <button class="btn-pesquisar" v-on:click="makeFiltered">Pesquisar</button>
                                  </div>
 							</div>
 						</div>
@@ -75,7 +75,8 @@ export default {
         estado:'',
         cidade:'',
         bairro:''
-      }
+      },
+      filtered: []
     }
   },
   created(){
@@ -113,6 +114,14 @@ export default {
           return filters[key](item[key]);
         });
       });
+    },
+    makeFiltered () {
+      const self = this;
+      if (!this.haveFilter) {
+        self.filtered = []
+      } else {
+        self.filtered = this.filterArray(store.state.contadores,this.filters)
+      }
     }
   },  
   computed: {
@@ -153,17 +162,6 @@ export default {
             return contador.bairro
         }
       }).filter(notUndefined => notUndefined !== undefined))
-    }, 
-    filtered () {
-      const self = this;
-      if (!this.haveFilter) {
-        if(store.state.contadores.length > 0){
-          return this.getRandom(store.state.contadores,10)
-        }
-        return []
-      } else {
-        return this.filterArray(store.state.contadores,this.filters)
-      }
     }
   }
 }

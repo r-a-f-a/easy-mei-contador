@@ -1,0 +1,13 @@
+{
+  "auth": {
+        "apiKey": "AIzaSyD0hU-MKuo4fu0CVaIOshZ_5QDf49W8lOM",
+        "authDomain": "easymei-backend-dev.firebaseapp.com",
+        "databaseURL": "https://easymei-backend-dev.firebaseio.com",
+        "projectId": "easymei-backend-dev",
+        "storageBucket": "easymei-backend-dev.appspot.com",
+        "messagingSenderId": "393715247766",
+        "appId": "1:393715247766:web:ce7bcf4692d8640b86f0b7",
+        "measurementId": "G-MRK1R2NDDQ"
+  },
+  "collection": "portal_contador"
+}

@@ -1,0 +1,13 @@
+{
+  "auth": {
+    "apiKey": "AIzaSyAH2vI8GRyrWxEhhHjOK8AWbs7_CtcN5pM",
+    "authDomain": "easymei-73b71.firebaseapp.com",
+    "databaseURL": "https://easymei-73b71.firebaseio.com",
+    "projectId": "easymei-73b71",
+    "storageBucket": "easymei-73b71.appspot.com",
+    "messagingSenderId": "579663411746",
+    "appId": "1:579663411746:web:7411635cd884984cd6287b",
+    "measurementId": "G-84F8FG2PPY"
+  },
+  "collection": "contadores"
+}

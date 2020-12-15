@@ -1,30 +1,18 @@
 import firebase from 'firebase'
+import config from './firebase.json'
 import store from './store'
-const firebaseConfig = {
-    apiKey: "AIzaSyAH2vI8GRyrWxEhhHjOK8AWbs7_CtcN5pM",
-    authDomain: "easymei-73b71.firebaseapp.com",
-    databaseURL: "https://easymei-73b71.firebaseio.com",
-    projectId: "easymei-73b71",
-    storageBucket: "easymei-73b71.appspot.com",
-    messagingSenderId: "579663411746",
-    appId: "1:579663411746:web:7411635cd884984cd6287b",
-    measurementId: "G-84F8FG2PPY"
-};
-// var firebase = require("firebase/app");
 
-// // Add the Firebase products that you want to use
-// require("firebase/analytics");
-// require("firebase/firestore");
 // Initialize Firebase
-firebase.initializeApp(firebaseConfig);
+firebase.initializeApp(config.auth);
 firebase.analytics();
 const db = firebase.firestore();
 export default {
   getAllContadores(){
-    return db.collection('contadores')
+    return db.collection(config.collection)
             .get()
             .then(snapshot => {
               snapshot.forEach(doc => {
+                  console.log('DOC', JSON.stringify(doc.data()))
                   let contador = doc.data()
                   let node = {
                       id: doc.id,
